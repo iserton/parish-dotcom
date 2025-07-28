@@ -1,0 +1,42 @@
+name: Deploy Docker on Self-Hosted Runner
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: self-hosted
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Remove existing container and image
+        run: |
+          docker rm -f parish-dotcom || true
+          docker rmi parish-dotcom || true
+
+      - name: Build Docker image
+        run: | 
+          docker build \
+            --build-arg GOOGLE_API_KEY=${{ secrets.GOOGLE_API_KEY }} \
+            --build-arg PLAYLIST_ID=${{ secrets.PLAYLIST_ID }} \
+            --build-arg CHANNEL_ID=${{ secrets.CHANNEL_ID }} \
+            --build-arg DRIVE_FOLDER_ID=${{ secrets.DRIVE_FOLDER_ID }} \
+            -f Dockerfile \
+            -t parish-dotcom \
+            .
+
+      - name: Run Docker container
+        run: |
+          docker run -d \
+            -e GOOGLE_API_KEY=${{ secrets.GOOGLE_API_KEY }} \
+            -e PLAYLIST_ID=${{ secrets.PLAYLIST_ID }} \
+            -e CHANNEL_ID=${{ secrets.CHANNEL_ID }} \
+            -e DRIVE_FOLDER_ID=${{ secrets.DRIVE_FOLDER_ID }} \
+            --restart always \
+            --name parish-dotcom \
+            -p 3003:3000 \
+            parish-dotcom
