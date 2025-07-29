@@ -35,7 +35,7 @@ const Pozostali = () => {
 
         <h2 className='text-[4.5vh] font-main font-bold'>Wikariusze</h2>
 
-        <div className='w-full  flex flex-row mt-[5vh]'>
+        {/* <div className='w-full  flex flex-row mt-[5vh]'>
             <div className='hidden md:flex w-1/2 h-[50vh] relative'>
                 <Image className='pr-[5vw]' alt="zdjecie wikariusza" src="/ksiadz_zbigniew.jpeg" fill objectFit='cover'/>
             </div>
@@ -47,7 +47,7 @@ const Pozostali = () => {
                 <p className='pt-[2vh]'>Prywatnie interesuje się literaturą teologiczną, prawniczą, historyczną, filozoficzną. Lubi rozmawiać z ludźmi, jeździć na rowerze, odbywać wycieczki krajoznawcze. Jednak – jak mówi - wszystko powyższe jest tylko dodatkiem, gdyż od ponad 45 lat najpełniej realizuje się jako ksiądz w pracy duszpasterskiej.</p>
                 <Link href="/parafia/duszpasterze/badowski"><button className='bg-dark text-white px-4 py-3 mt-[2vh]'>Zobacz więcej</button></Link>
             </div>
-        </div>
+        </div> */}
 
         <h2 className='text-[4.5vh] font-main font-bold mt-[5vh]'>Rezydenci</h2>
 
