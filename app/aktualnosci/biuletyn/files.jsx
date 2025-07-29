@@ -60,7 +60,7 @@ const Files = async () => {
                         {biuletyny.map((item) => (
                             <a href={item.attributes.url} target="_blank" key={item.id}>
                                     <div className='w-[120px] h-[50px] flex items-center justify-center bg-dark text-white border-2 border-dark hover:bg-white hover:text-black hover:border-2 hover:border-black'>
-                                        <h2 className='text-[2.3vh] font-header2'>{new Date(item.attributes.date).toLocaleDateString('pl')}</h2>
+                                        <h2 className='text-[20px] font-header2'>{new Date(item.attributes.date).toLocaleDateString('pl')}</h2>
                                         {/* <h2 className='text-[4.5vh] font-header2'>{item.attributes.title}</h2> */}
                                         {/* <div className='flex md:hidden h-[40vh] w-full relative'>
                                             <Image fill objectFit="cover" alt='zdjecie kazanie' src={'https://parafia.bieda.it' + item.attributes.zdjecie.data.attributes.url}></Image>
