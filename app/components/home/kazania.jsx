@@ -14,7 +14,10 @@ const Kazania = () => {
             <p className='mt-[3vh]'>Zapraszamy do stołu Słowa Bożego, który hojnie dla nas zastawia ksiądz Ojciec Leszek Slipek. </p>
             <p className='mt-[1vh]'>Prezentujemy nagrania kazań niedzielnych i świątecznych, konferencji, medytacji. Bierzcie i... słuchajcie!</p>
             {/* <p className='mt-[1vh]'>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using Content here, content her,</p> */}
+            <p>
             <Link href="/aktualnosci/kazania"><button className='p-4 bg-dark text-white mt-[5vh]'>Zobacz więcej</button></Link>
+
+            </p>
         </div>
     </div>
   )
