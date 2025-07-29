@@ -3,8 +3,8 @@ import Image from 'next/image'
 const Intro = () => {
   return (
     <div id="first" className='flex flex-col md:flex-row w-full py-[5vh] md:pt-[10vh] px-[5vw] bg-white'>
-        <div className='w-1/2  relative min-h-[40vh]'>
-            <Image className='pr-[5vw]' fill objectFit='cover' src="/spo10.webp" alt="chrzest"/>
+        <div className='w-1/2 relative'>
+            <Image className='pr-[5vw]' fill objectFit='cover' src="/spo10.webp" alt="spowiedz"/>
         </div>
         <div className="h-full w-full md:w-1/2 flex flex-col justify-center">
             <h2 className='text-[4.5vh] font-header2'>Znaczenie Sakramentu</h2>
@@ -13,7 +13,7 @@ const Intro = () => {
             {/* <p className='mt-[3vh]'>Czyż nie wiadomo wam, że my wszyscy, którzyśmy otrzymali chrzest zanurzający w Chrystusa Jezusa, zostaliśmy zanurzeni w Jego śmierć? Zatem przez chrzest zanurzający nas w śmierć zostaliśmy razem z Nim pogrzebani po to, abyśmy i my wkroczyli w nowe życie – jak Chrystus powstał z martwych dzięki chwale Ojca. (Rz 6, 3 – 4)</p> */}
         </div>
         <div className='md:hidden h-[40vh] w-full mt-[5vh] relative'>
-            <Image className='pr-[5vw]' fill objectFit='cover' src="/spo10.webp" alt="chrzest"/>
+            <Image className='pr-[5vw]' fill objectFit='cover' src="/spo10.webp" alt="spowiedz"/>
         </div>
     </div>
   )

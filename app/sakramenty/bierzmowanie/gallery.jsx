@@ -2,7 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 const Gallery = () => {
   return (
-    <div className='w-full px-[5vw] py-[10vh] grid grid-cols-2 h-[90vh] gap-4 bg-white'>
+    <div className='w-full px-[5vw] pb-[5vh] grid grid-cols-1 md:grid-cols-2 h-[75vh] md:h-[60vh] gap-4 bg-white my-[5vh]'>
         <div className='relative h-full w-full'>
             <Image src="/bierz1.jpeg" alt="zdjecie schola" fill objectFit='cover'/>
         </div>
