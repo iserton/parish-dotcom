@@ -46,12 +46,13 @@ const News = async () => {
     //         loadImages(data[0].id, data[1].id, data[2].id)})
     // }, []);
 
-    if (!data) return <>Problem</>
+    // if (!data) return <>Problem</>
   return (
     <div className='flex flex-col w-full py-[10vh] items-center justify-center bg-white text-black'>
         <h2 className='text-[5.5vh] font-header2 mb-[3vh]'>Aktualności</h2>
         
             {news !== null ? (
+                <>
             <div className='flex flex-col '>
                 <div className='flex flex-col md:flex-row w-full items-center justify-center'>
                 
@@ -111,11 +112,15 @@ const News = async () => {
                 </div>
             </div> */}
             </div>
-            ) : null}
         
         <Link href="/aktualnosci/ogloszenia" className='mt-[5vh]'>
             <button className='bg-dark text-white text-[2.3vh] p-4'>Zobacz więcej</button>
         </Link>
+        </>
+            ) : <>Nie znaleziono ogłoszeń.</>}
+        {/* <Link href="/aktualnosci/ogloszenia" className='mt-[5vh]'>
+            <button className='bg-dark text-white text-[2.3vh] p-4'>Zobacz więcej</button>
+        </Link> */}
     </div>
   )
 }
