@@ -36,7 +36,3 @@ You can start editing the website by modifying files in the `app/` directory. Fo
 To learn more about Next.js, visit:
 - [Next.js Documentation](https://nextjs.org/docs)
 - [Learn Next.js](https://nextjs.org/learn)
-
-## License
-
-This project is licensed under the MIT License. Contributions are welcome!
