@@ -56,18 +56,21 @@ const Footer = () => {
                     <h4>Dni powszednie</h4>
                     <p className='mt-[2vh]'>6:30</p>
                     <p>8:00</p>
-                    <p>9:00</p>
+                    <p>9:00*</p>
                     <p>18:00</p>
                 </div>
                 <div className='ml-[2vw]'>
                     <h4>Niedziele i Święta</h4>
-                    <p className='mt-[2vh]'>7:00</p>
+                    <p className='mt-[2vh]'>7:00*</p>
                     <p>8:30</p>
                     <p>10:00</p>
                     <p>11:30 (Rodzinna)</p>
                     <p>13:00</p>
                     <p>18:00</p>
                 </div>
+            </div>
+            <div>
+                <p className='mt-[2vh] text-[#ff0000]'>* brak mszy w okresie wakacyjnym</p>
             </div>
         </div>
         <div className='w-full md:w-[20%] md:mx-[2vw] flex flex-col border-b-[2px] items-center md:items-stretch md:border-b-[0px] pb-[2vh] md:pb-0 mt-[2vh] md:mt-0'>

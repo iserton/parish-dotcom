@@ -20,18 +20,21 @@ const Hours = () => {
                             <h4 className='font-bold text-[2.3vh]'>Dni powszednie</h4>
                             <p className='mt-[2vh]'>6:30</p>
                             <p>8:00</p>
-                            <p>9:00</p>
+                            <p>9:00<span className='text-[#ff0000]'>*</span></p>
                             <p>18:00</p>
                         </div>
                         <div className=''>
                             <h4 className='font-bold text-[2.3vh]'>Niedziele i święta</h4>
-                            <p className='mt-[2vh]'>7:00</p>
+                            <p className='mt-[2vh]'>7:00<span className='text-[#ff0000]'>*</span></p>
                             <p>8:30</p>
                             <p>10:00</p>
                             <p>11:30 (Rodzinna)</p>
                             <p>13:00</p>
                             <p>18:00</p>
                         </div>
+                    </div>
+                    <div className='mt-[2vh] md:hidden'>
+                        <p className='mt-[1vh] text-[1.8vh] text-[#ff0000]'>UWAGA! W okresie wakacyjnym, <span className='underline'>nie ma</span> <br /> mszy o 9:00 w dni powszednie oraz o 7:00 <br /> w Niedziele i Święta.</p>
                     </div>
                 </div>
                 
@@ -41,6 +44,9 @@ const Hours = () => {
                     <p className='mt-[2vh]'>Sobota: 16:00-18:00 w dolnym kościele</p>
                     <p className='mt-[2vh]'>Niedziela: 8:00-13:00 w dolnym kościele</p>
                 </div>
+            </div>
+            <div className='hidden md:inline-block mt-[2vh]'>
+                <p className='mt-[1vh] text-[1.8vh] text-[#ff0000]'>UWAGA! W okresie wakacyjnym, <span className='underline'>nie ma</span> mszy o 9:00 w dni powszednie oraz o 7:00 w Niedziele i Święta.</p>
             </div>
             
         </div>

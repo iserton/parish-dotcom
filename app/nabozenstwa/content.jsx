@@ -6,7 +6,7 @@ const Content = () => {
     <div id="first" className='w-full flex flex-col bg-white py-[10vh]'>
         <div className='flex flex-col gap-5 md:gap-0'>
         <div className=' h-[55vh w-full px-[5v flex flex-col-reverse md:flex-row gap-5 md:gap-0'>
-            <div className='md:w-1/2 w-full h-[40vh] relative '>
+            <div className='md:w-1/2 w-full h-[40vh] md:h-[50vh] relative '>
                 <Image className="px-[4vw" alt="tlo msza swieta" src="/nabozenstwa2.jpeg" fill objectFit='cover'></Image>
             </div>
             <div className='md:w-1/2 w-full justify-center flex flex-col pl-[5vw]'>
@@ -29,6 +29,9 @@ const Content = () => {
                         <p className='mt-[1vh] text-[1.8vh]'>18:00</p>
                     </div>
                 </div>
+                <div className='mt-[2vh] max-w-[75%]'>
+                    <p className='mt-[1vh] text-[1.8vh] text-[#ff0000]'>UWAGA! W okresie wakacyjnym, <span className='underline'>nie ma</span> mszy o 9:00 w dni powszednie oraz o 7:00 w Niedziele i Święta.</p>
+                </div>
             </div>
             
         </div>
@@ -47,8 +50,8 @@ const Content = () => {
             </div>
             
         </div>
-        <div className='mt-[10vh h-[55vh] w-full px-[5vw flex flex-col-reverse md:flex-row gap-5 md:gap-0'>
-            <div className='md:w-1/2 w-full h-full relative '>
+        <div className='mt-[10vh h-[55vh w-full px-[5vw flex flex-col-reverse md:flex-row gap-5 md:gap-0'>
+            <div className='md:w-1/2 w-full h-[40vh] relative '>
                 <Image className="px-[4vw" alt="tlo msza swieta" src="/nabozenstwa4.jpeg" fill objectFit='cover'></Image>
             </div>
             <div className='md:w-1/2 w-full  justify-center flex flex-col pl-[5vw]'>
