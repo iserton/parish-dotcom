@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parafia pw. św. Andrzeja Apostoła</title>
+    <meta name="description" content="Parafia pw. św. Andrzeja Apostoła w Warszawie"/>
+    <link rel="icon" href="https://graph.facebook.com/ParafiaAndrzeja/picture?size=large"/>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            height: 100vh;
+            width: 100vw;
+            background-color: rgb(198 151 116);
+            font-family: "Inter", "sans-serif";
+            color: white;
+            display: flex;
+            padding: 0 10vw;
+            line-height: 1.5;
+        }
+
+        h3{
+            font-family: "Oswald", "sans-serif";
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        p{
+            font-size: 2.3vh;
+        }
+
+        #div1, #div3{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100%;
+        }
+
+        #div1{
+            justify-content: flex-end;
+            width: 35%;
+        }
+
+        #div3{
+            justify-content: flex-start;
+        }
+
+        #div1 div{
+            display: flex;
+            position: relative;
+            height: 35vh;
+            width: 100%;
+            margin-bottom: 5vh;
+        }
+
+        #div2{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* padding: 0 6vw; */
+        }
+
+        img{
+            object-fit: contain;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+
+        .container{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas: 
+                "div1 div2"
+                "div3 div2";
+            gap: 1rem;
+        }
+
+        #div1{
+            grid-area: div1;
+        }
+
+        #div2{
+            grid-area: div2;
+        }
+
+        #div3{
+            grid-area: div3;
+        }
+
+        @media (max-width: 768px) {
+
+            .container {
+                grid-template-columns: 1fr;
+                grid-template-areas:
+                "div1"
+                "div2"
+                "div3";
+                place-items: center;
+            }
+
+            #div3{
+                width: 100%;
+            }
+
+            #div1 div{
+                margin-bottom: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="div1">
+            <div>
+                <a href="/"><img src="/public/kosciol_logo.png" alt="logo kosciola" class='align-left' ></img></a>
+            </div>
+        </div>
+        <div id="div3">
+            <h3>Adres</h3>
+            <p>Chłodna 9</p>
+            <p>00-891 Warszawa</p>
+            <h3 style="margin-top: 3vh;">Kontakt</h3>
+            <p>parafianachlodnej@gmail.com</p>
+            <p>22 620 37 47</p>
+        </div>
+        <div id="div2">
+            <div>
+                <h3>Aktualizujemy serwis...</h3>
+                <p>Właśnie wgrywamy nowe funkcje i poprawki. Odśwież stronę za kilka minut!</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="left-container">
+        <div>
+            <a href="/"><img src="/public/kosciol_logo.png" alt="logo kosciola" class='align-left' ></img></a>
+        </div>
+        <h3>Adres</h3>
+        <p>Chłodna 9</p>
+        <p>00-891 Warszawa</p>
+        <h3 style="margin-top: 3vh;">Kontakt</h3>
+        <p>parafianachlodnej@gmail.com</p>
+        <p>22 620 37 47</p>
+    </div>
+    <div class="right-container">
+        <div>
+            <h3>Aktualizujemy serwis...</h3>
+            <p>Właśnie wgrywamy nowe funkcje i poprawki. Odśwież stronę za kilka minut!</p>
+        </div>
+    </div> -->
+</body>
+</html>
