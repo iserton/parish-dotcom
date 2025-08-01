@@ -80,7 +80,7 @@ export default function RootLayout({ children }) {
 
 
   return (
-    <html lang="en">
+    <html lang="pl-PL">
       <body className={`${inter.className} w-max-screen overflow-x-hidden`}>
         
         <HeaderVisibilityProvider>
