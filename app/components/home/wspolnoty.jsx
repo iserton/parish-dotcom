@@ -15,7 +15,7 @@ const Wspolnoty = () => {
                 <div className='flex px-[2vw] w-full h-full bg-black bg-opacity-50 min-h-[30vh] relative hover:bg-white hover:bg-opacity-30 flex-col justify-center items-center'>
                     <div className='absolute z-20 top-0 left-0 w-full h-full bg-black bg-opacity-80 hover:bg-opacity-60'></div>
                     <Image alt="" src="/chor12.jpeg" fill objectFit='cover'></Image>
-                    <p className='z-30 text-center text-bold text-white font-header2 text-[4.5vh]'>SCHOLA</p>
+                    <p className='z-30 text-center text-bold text-white font-header2 text-[4.5vh] pointer-events-none'>SCHOLA</p>
                 </div>
                 </Link>
 
@@ -23,7 +23,7 @@ const Wspolnoty = () => {
                 <div className='flex px-[2vw] w-full h-full relative bg-black bg-opacity-50 min-h-[30vh] hover:bg-white hover:bg-opacity-30 flex-col justify-center items-center'>
                     <div className='absolute z-20 top-0 left-0 w-full h-full bg-black bg-opacity-80 hover:bg-opacity-60'></div>
                     <Image alt="" src="/rodz6.jpeg" fill objectFit='cover'></Image>
-                    <p className='z-20 text-center text-bold text-white font-header2 text-[4.5vh]'>SCHOLA RODZINNA</p>
+                    <p className='z-20 text-center text-bold text-white font-header2 text-[4.5vh] pointer-events-none'>SCHOLA RODZINNA</p>
                 </div>
                 </Link>
 
@@ -31,7 +31,7 @@ const Wspolnoty = () => {
                 <div className='flex px-[2vw] w-full h-full relative bg-black bg-opacity-50 min-h-[30vh] hover:bg-white hover:bg-opacity-30 flex-col justify-center items-center'>
                     <div className='absolute z-20 top-0 left-0 w-full h-full bg-black bg-opacity-80 hover:bg-opacity-60'></div>
                     <Image alt="" src="/caritasnew2.png" fill objectFit='cover'></Image>
-                    <p className='z-20 text-center text-bold text-white font-header2 text-[4.5vh]'>CARITAS</p>
+                    <p className='z-20 text-center text-bold text-white font-header2 text-[4.5vh] pointer-events-none'>CARITAS</p>
                 </div>
                 </Link>
 
@@ -39,7 +39,7 @@ const Wspolnoty = () => {
                 <div className='flex px-[2vw] w-full h-full relative bg-black bg-opacity-50 min-h-[30vh] hover:bg-white hover:bg-opacity-30 flex-col justify-center items-center'>
                     <div className='absolute z-20 top-0 left-0 w-full h-full bg-black bg-opacity-80 hover:bg-opacity-60'></div>
                     <Image alt="" src="/min3.jpeg" fill objectFit='cover'></Image>
-                    <p className='z-20 text-center text-bold text-white font-header2 text-[4.5vh]'>SŁUŻBA LITURGICZNA</p>
+                    <p className='z-20 text-center text-bold text-white font-header2 text-[4.5vh] pointer-events-none'>SŁUŻBA LITURGICZNA</p>
                 </div>
                 </Link>
 
@@ -47,7 +47,7 @@ const Wspolnoty = () => {
                 <div className='flex px-[2vw] w-full h-full relative bg-black bg-opacity-50 min-h-[30vh] hover:bg-white hover:bg-opacity-30 flex-col justify-center items-center'>
                     <div className='absolute z-20 top-0 left-0 w-full h-full bg-black bg-opacity-80 hover:bg-opacity-60'></div>
                     <Image alt="" src="/kolo_rozanca.webp" fill objectFit='cover'></Image>
-                    <p className='z-20 text-center text-bold text-white font-header2 text-[4.5vh]'>RYCERSTWO NIEPOKALANEJ</p>
+                    <p className='z-20 text-center text-bold text-white font-header2 text-[4.5vh] pointer-events-none'>RYCERSTWO NIEPOKALANEJ</p>
                 </div>
                 </Link>
 
@@ -55,7 +55,7 @@ const Wspolnoty = () => {
                 <div className='flex px-[2vw] w-full h-full relative bg-black bg-opacity-50 min-h-[30vh] hover:bg-white hover:bg-opacity-30 flex-col justify-center items-center'>
                     <div className='absolute z-20 top-0 left-0 w-full h-full bg-black bg-opacity-80 hover:bg-opacity-60'></div>
                     <Image alt="" src="/kmi12.jpeg" fill objectFit='cover'></Image>
-                    <p className='z-20 text-center text-bold text-white font-header2 text-[4.5vh]'>KLUB MŁODEJ INTELIGENCJI</p>
+                    <p className='z-20 text-center text-bold text-white font-header2 text-[4.5vh] pointer-events-none'>KLUB MŁODEJ INTELIGENCJI</p>
                 </div>
                 </Link>
 
