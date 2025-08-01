@@ -18,6 +18,10 @@ jobs:
           docker rm -f parish-dotcom || true
           docker rmi parish-dotcom || true
 
+      - name: Start update container
+        run: |
+          docker start parish-update || true
+
       - name: Build Docker image
         run: | 
           docker build \
@@ -28,6 +32,10 @@ jobs:
             -f Dockerfile \
             -t parish-dotcom \
             .
+
+      - name: Stop update container
+        run: |
+          docker stop parish-update || true
 
       - name: Run Docker container
         run: |
