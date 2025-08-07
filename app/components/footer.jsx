@@ -20,7 +20,7 @@ const Footer = () => {
                     <p>Chłodna 9</p>
                     <p>00-891 Warszawa</p>
                     <h2 className='font-bold text-[2.3vh] mt-[3vh] '>Kontakt</h2>
-                    <p>parafianachlodnej@gmail.com</p>
+                    <p>parafia@parafiaandrzeja.pl</p>
                     <p>22 620 37 47</p>
 
                 <div className='w-[200px] h-[24px] relative flex flex-row mt-[2vh]'>

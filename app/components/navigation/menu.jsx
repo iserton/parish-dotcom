@@ -30,7 +30,7 @@ const Menu = () => {
                     <p>Chłodna 9</p>
                     <p>00-891 Warszawa</p>
                     <h2 className='font-bold text-[30px] mt-[3vh] font-header2'>Kontakt</h2>
-                    <p>parafianachlodnej@gmail.com</p>
+                    <p>parafia@parafiaandrzeja.pl</p>
                     <p>22 620 37 47</p>
                 </div>
                 <div className={`flex flex-col w-full md:w-[65%] text-white text-[35px] justify-center md:ml-[10%] ${menuElement == '' ? '' : 'hidden'} font-header2`}>
