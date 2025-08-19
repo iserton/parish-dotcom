@@ -51,11 +51,11 @@ const Wspolnoty = () => {
                 </div>
                 </Link>
 
-                <Link href="/wspolnoty/mloda-inteligencja">
+                <Link href="/wspolnoty/klub-dyskusyjny">
                 <div className='flex px-[2vw] w-full h-full relative bg-black bg-opacity-50 min-h-[30vh] hover:bg-white hover:bg-opacity-30 flex-col justify-center items-center'>
                     <div className='absolute z-20 top-0 left-0 w-full h-full bg-black bg-opacity-80 hover:bg-opacity-60'></div>
                     <Image alt="" src="/kmi12.jpeg" fill objectFit='cover'></Image>
-                    <p className='z-20 text-center text-bold text-white font-header2 text-[4.5vh] pointer-events-none'>KLUB MŁODEJ INTELIGENCJI</p>
+                    <p className='z-20 text-center text-bold text-white font-header2 text-[4.5vh] pointer-events-none'>KATOLICKI KLUB DYSKUSYJNY</p>
                 </div>
                 </Link>
 
