@@ -106,7 +106,7 @@ const Menu = () => {
                     <hr className='mt-[1vh] mb-[1vh] border-1'/>
                     <Link onClick={closeReset} href="/wspolnoty/ministranci">Ministranci</Link>
                     <hr className='mt-[1vh] mb-[1vh] border-1'/>
-                    <Link onClick={closeReset} href="/wspolnoty/mloda-inteligencja">Klub Młodej Inteligencji</Link>
+                    <Link onClick={closeReset} href="/wspolnoty/klub-dyskusyjny">Katolicki Klub Dyskusyjny</Link>
                     <hr className='mt-[1vh] mb-[1vh] border-1'/>
                     <Link onClick={closeReset} href="/wspolnoty/rycerstwo-niepokalanej">Rycerstwo Niepokalanej</Link>
                     <hr className='mt-[1vh] mb-[1vh] border-1'/>

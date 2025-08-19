@@ -11,7 +11,7 @@ const Banner = () => {
           {/* <p className='text-white text-[1.7vh]'>- w niedzielę o godz. 17.00 (przed mszą św.).</p> */}
         </div>
         <div className='w-full md:w-[40%] mt-[3vh] md:mt-0 flex flex-col'>
-          <p className='text-white text-[1.7vh]'>Kontakt KMJ@parafiaandrzeja.pl</p>
+          <p className='text-white text-[1.7vh]'>Kontakt kkd@parafiaandrzeja.pl</p>
           {/* <p className='text-white text-[1.7vh] mt-[1vh]'>KONTAKT: Tomasz Owczarek tel. +48 501 561 393 (tomaszadamowczarek@gmail.com)</p> */}
         </div>
         </div>
