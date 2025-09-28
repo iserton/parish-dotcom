@@ -13,7 +13,7 @@ const Content = () => {
 
 W latach 1992–1998 odbył studia w Warszawskim Metropolitalnym Seminarium Duchownym. W 1998 r. uzyskał tytuł magistra teologii, a w 1999 r. licencjat kanoniczny z teologii na Papieskim Wydziale Teologicznym w Warszawie.
 
-Posługę duszpasterską pełnił jako wikariusz w parafiach: św. Trójcy w Błoniu, św. Wojciecha w Warszawie oraz św. Aleksandra w Warszawie. Od 2020 r. jest wikariuszem Parafii św. Andrzeja Apostoła w Warszawie.
+Posługę duszpasterską pełnił jako wikariusz w parafiach: św. Trójcy w Błoniu, św. Wojciecha w Warszawie oraz św. Aleksandra w Warszawie. Od 2020 r. jest wikariuszem, a od czerwca 2025 r. proboszczem Parafii św. Andrzeja Apostoła w Warszawie.
 
 Imieniny obchodzi 29 czerwca. Pracuje jako nauczyciel religii w Szkole Podstawowej nr 220 przy ul. Jana Pawła II 26A w Warszawie oraz w Zespole Szkół nr 7 przy ul. Chłodnej 36/46 w Warszawie.</p>
           {/* <p className='text-[1.7vh] mt-[2vh]'>Przez cztery lata pełnił funkcję ojca duchownego w Wyższym Seminarium Duchownym w Warszawie. W
