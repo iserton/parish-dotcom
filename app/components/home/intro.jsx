@@ -21,7 +21,7 @@ const Intro = () => {
                   <Link href="/parafia/kosciol"><button className='p-4 bg-dark text-white mt-6'>Zobacz więcej</button></Link>  
                 </p>
               </div>
-              <div className='flex w-full md:w-1/2 h-[40vw] md:h-full md:absolute relative right-0 top-0 h-full my-4 md:my-0'>
+              <div className='flex w-full md:w-1/2 h-[40vw] md:h-full md:absolute relative right-0 top-0 my-4 md:my-0'>
                 <Image src="/parafia_szkic_no_bg_2.png" href="kontru kosciola" objectFit="cover" fill alt="historyczne zdjecie kosciola"/>
               </div>
             </div>
