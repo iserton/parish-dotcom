@@ -3,62 +3,33 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 const Sakramenty = () => {
-  return (
-    <div className='w-full py-[5vh] flex relative'>
-        <Image src="/sakramenty_tlo.jpeg" alt="tlo sakramenty" fill={true} objectFit='cover'/> 
-        <div className='z-10 w-full h-full py-[8vh] px-[8vw] flex flex-col justify-center items-center text-white'>
-            <h2 className='text-white text-[5.5vh] font-header2'>Sakramenty</h2>
-            {/* <p className='text-white mt-[3vh]'>W naszym kosciel istnieje nie od dzis wiele roznych zgromadzen ktore zajmuja sie blah blah przerozny;mji rzeczami. Juz dzis mozesz dolaczyc i sie zaangazowac.</p> */}
-            <div className='mt-[5vh] flex flex-col md:flex-row justify-center text-white font-header2 text-[3vh] '>
-                <Link href="/sakramenty/chrzest">
-                <div className='flex h-[20vh] py-[2.5vh]  w-[40vw] md:w-[12vw] hover:bg-white hover:bg-opacity-10 flex-col justify-center items-center mx-[1vw]'>
-                    <div className='h-[60%] relative w-[50%]'>
-                        <Image src="/baptism_white.png" alt="ikonka sakramenty" fill objectFit='contain'/>
-                    </div>
-                    <p className='text-center text-bold '>CHRZEST</p>
-                </div>
-                </Link>
-                <Link href="/sakramenty/pokuta">
-                <div className='flex h-[20vh] py-[2.5vh]  w-[40vw] md:w-[12vw] hover:bg-white hover:bg-opacity-10 flex-col justify-center items-center mx-[1vw]'>
-                    <div className='h-[60%] relative w-[50%]'>
-                        <Image src="/contrition_white.png" alt="ikonka sakramenty" fill objectFit='contain'/>
-                    </div>
-                    <p className='text-center text-bold'>POKUTA</p>
-                </div>
-                </Link>
-                <Link href="/sakramenty/komunia">
-                <div className='flex h-[20vh] py-[2.5vh]  w-[40vw] md:w-[12vw] hover:bg-white hover:bg-opacity-10 flex-col justify-center items-center mx-[1vw]'>
-                    <div className='h-[60%] relative w-[50%]'>
-                        <Image src="/communion_white.png" alt="ikonka sakramenty" fill objectFit='contain'/>
-                    </div>
-                    <p className='text-center text-bold '>EUCHARYSTIA</p>
-                </div>
-                </Link>
-                <Link href="/sakramenty/bierzmowanie">
-                <div className='flex h-[20vh] py-[2.5vh]  w-[40vw] md:w-[12vw] hover:bg-white hover:bg-opacity-10 flex-col justify-center items-center mx-[1vw]'>
-                    <div className='h-[60%] relative w-[50%]'>
-                        <Image src="/bierzmowanie_white.png" alt="ikonka sakramenty" fill objectFit='contain'/>
-                    </div>
-                    <p className='text-center text-bold'>BIERZMOWANIE</p>
-                </div>
-                </Link>
-                <Link href="/sakramenty/malzenstwo">
-                <div className='flex h-[20vh] py-[2.5vh]  w-[40vw] md:w-[12vw] hover:bg-white hover:bg-opacity-10 flex-col justify-center items-center mx-[1vw]'>
-                    <div className='h-[60%] relative w-[50%]'>
-                        <Image src="/wedding-rings_white.png" alt="ikonka sakramenty" fill objectFit='contain'/>
-                    </div>
-                    <p className='text-center text-bold'>MAŁŻEŃSTWO</p>
-                </div>
-                </Link>
-                <Link href="/sakramenty/namaszczenie">
-                <div className='flex h-[20vh] py-[2.5vh]  w-[40vw] md:w-[12vw] hover:bg-white hover:bg-opacity-10 flex-col justify-center items-center mx-[1vw]'>
-                    <div className='h-[60%] relative w-[50%]'>
-                        <Image src="/anointing_white.png" alt="ikonka sakramenty" fill objectFit='contain'/>
-                    </div>
-                    <p className='text-center text-bold'>NAMASZCZENIE</p>
-                </div>
-                </Link>
-                
+
+    const sakr = [
+        { link: '/sakramenty/chrzest', name: 'Chrzest', image: '/baptism_white.png' },
+        { link: '/sakramenty/pokuta', name: 'Pokuta', image: '/contrition_white.png' },
+        { link: '/sakramenty/komunia', name: 'Eucharystia', image: '/communion_white.png' },
+        { link: '/sakramenty/bierzmowanie', name: 'Bierzmowanie', image: '/bierzmowanie_white.png' },
+        { link: '/sakramenty/malzenstwo', name: 'Małżeństwo', image: '/wedding-rings_white.png' },
+        { link: '/sakramenty/namaszczenie', name: 'Namaszczenie', image: '/anointing_white.png' }
+    ]
+
+    return (
+        <div className='w-full py-24 flex relative'>
+                <Image src="/sakramenty_tlo.jpeg" alt="tlo sakramenty" fill={true} objectFit='cover'/> 
+            <div className='z-10 w-full h-full px-[8vw] flex flex-col justify-center items-center text-white'>
+                <h2 className='text-white text-3xl font-header2'>Sakramenty</h2>
+                {/* <p className='text-white mt-[3vh]'>W naszym kosciel istnieje nie od dzis wiele roznych zgromadzen ktore zajmuja sie blah blah przerozny;mji rzeczami. Juz dzis mozesz dolaczyc i sie zaangazowac.</p> */}
+                <div className='mt-8 flex justify-center text-white font-header2 text-2xl overflow-x-hidden w-full flex-wrap'>
+                    {sakr.map((s, i) => (
+                        <Link key={i} href={s.link}>
+                            <div className='flex h-[200px] py-6  w-[60vw] md:w-[200px] hover:bg-white hover:bg-opacity-10 flex-col justify-center items-center m-4'>
+                                <div className='h-3/5 relative w-1/2'>
+                                    <Image src={s.image} alt="ikonka sakramenty" fill objectFit='contain'/>
+                                </div>
+                                <p className='text-center text-bold uppercase mt-4'>{s.name}</p>
+                            </div>
+                        </Link>
+                    ))}
             </div>
         </div>
     </div>

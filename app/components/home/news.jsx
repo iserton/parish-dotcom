@@ -48,8 +48,8 @@ const News = async () => {
 
     // if (!data) return <>Problem</>
   return (
-    <div className='flex flex-col w-full py-[10vh] items-center justify-center bg-white text-black'>
-        <h2 className='text-[5.5vh] font-header2 mb-[3vh]'>Aktualności</h2>
+    <div className='flex flex-col w-full py-24 items-center justify-center bg-white text-black'>
+        <h2 className='text-3xl font-header2 mb-[3vh]'>Aktualności</h2>
         
             {news !== null ? (
                 <>
