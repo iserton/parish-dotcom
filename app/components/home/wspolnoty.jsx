@@ -4,58 +4,58 @@ import Link from 'next/link'
 
 const Wspolnoty = () => {
   return (
-    <div className='w-full flex flex-col relative bg-white py-[10vh] px-[8vw]'>
-        <h2 className='text-center text-[5.5vh] text-black font-header2'>Poznaj nasze wspólnoty parafialne</h2>
+    <div className='w-full flex flex-col relative bg-white py-24 px-[8vw]'>
+        <h2 className='text-center text-3xl text-black font-header2'>Poznaj nasze wspólnoty parafialne</h2>
         {/* <Image src="/wspolnoty.jpeg" alt="tlo wspolnoty" fill={true} />  */}
-        <div className='z-10 w-full h-full grid grid-cols-1 md:grid-cols-3 grid-rows-2 justify-center items-center gap-[2vh] mt-[5vh]'>
+        <div className='z-10 w-full h-full grid grid-cols-1 md:grid-cols-3 grid-rows-2 justify-center items-center gap-8 mt-[5vh]'>
             {/* <h2 className='text-white text-[30px] text-black font-header2'>Poznaj Nasze Wspolnoty Parafialne</h2> */}
             {/* <p className='text-white mt-[3vh]'>W naszym kosciel istnieje nie od dzis wiele roznych zgromadzen ktore zajmuja sie blah blah przerozny;mji rzeczami. Juz dzis mozesz dolaczyc i sie zaangazowac.</p> */}
             
                 <Link href="/wspolnoty/schola">
-                <div className='flex px-[2vw] w-full h-full bg-black bg-opacity-50 min-h-[30vh] relative hover:bg-white hover:bg-opacity-30 flex-col justify-center items-center'>
+                <div className='flex px-[2vw] w-full h-full bg-black bg-opacity-50 min-h-[20vh] relative hover:bg-white hover:bg-opacity-30 flex-col justify-center items-center'>
                     <div className='absolute z-20 top-0 left-0 w-full h-full bg-black bg-opacity-80 hover:bg-opacity-60'></div>
                     <Image alt="" src="/chor12.jpeg" fill objectFit='cover'></Image>
-                    <p className='z-30 text-center text-bold text-white font-header2 text-[4.5vh] pointer-events-none'>SCHOLA</p>
+                    <p className='z-30 text-center text-bold text-white font-header2 text-2xl pointer-events-none'>SCHOLA</p>
                 </div>
                 </Link>
 
                 <Link href="/wspolnoty/schola-dziecieca">
-                <div className='flex px-[2vw] w-full h-full relative bg-black bg-opacity-50 min-h-[30vh] hover:bg-white hover:bg-opacity-30 flex-col justify-center items-center'>
+                <div className='flex px-[2vw] w-full h-full relative bg-black bg-opacity-50 min-h-[20vh] hover:bg-white hover:bg-opacity-30 flex-col justify-center items-center'>
                     <div className='absolute z-20 top-0 left-0 w-full h-full bg-black bg-opacity-80 hover:bg-opacity-60'></div>
                     <Image alt="" src="/rodz6.jpeg" fill objectFit='cover'></Image>
-                    <p className='z-20 text-center text-bold text-white font-header2 text-[4.5vh] pointer-events-none'>SCHOLA RODZINNA</p>
+                    <p className='z-20 text-center text-bold text-white font-header2 text-2xl pointer-events-none'>SCHOLA RODZINNA</p>
                 </div>
                 </Link>
 
                 <Link href="/wspolnoty/caritas">
-                <div className='flex px-[2vw] w-full h-full relative bg-black bg-opacity-50 min-h-[30vh] hover:bg-white hover:bg-opacity-30 flex-col justify-center items-center'>
+                <div className='flex px-[2vw] w-full h-full relative bg-black bg-opacity-50 min-h-[20vh] hover:bg-white hover:bg-opacity-30 flex-col justify-center items-center'>
                     <div className='absolute z-20 top-0 left-0 w-full h-full bg-black bg-opacity-80 hover:bg-opacity-60'></div>
                     <Image alt="" src="/caritasnew2.png" fill objectFit='cover'></Image>
-                    <p className='z-20 text-center text-bold text-white font-header2 text-[4.5vh] pointer-events-none'>CARITAS</p>
+                    <p className='z-20 text-center text-bold text-white font-header2 text-2xl pointer-events-none'>CARITAS</p>
                 </div>
                 </Link>
 
                 <Link href="/wspolnoty/ministranci">
-                <div className='flex px-[2vw] w-full h-full relative bg-black bg-opacity-50 min-h-[30vh] hover:bg-white hover:bg-opacity-30 flex-col justify-center items-center'>
+                <div className='flex px-[2vw] w-full h-full relative bg-black bg-opacity-50 min-h-[20vh] hover:bg-white hover:bg-opacity-30 flex-col justify-center items-center'>
                     <div className='absolute z-20 top-0 left-0 w-full h-full bg-black bg-opacity-80 hover:bg-opacity-60'></div>
                     <Image alt="" src="/min3.jpeg" fill objectFit='cover'></Image>
-                    <p className='z-20 text-center text-bold text-white font-header2 text-[4.5vh] pointer-events-none'>SŁUŻBA LITURGICZNA</p>
+                    <p className='z-20 text-center text-bold text-white font-header2 text-2xl pointer-events-none'>SŁUŻBA LITURGICZNA</p>
                 </div>
                 </Link>
 
                 <Link href="/wspolnoty/rycerstwo-niepokalanej">
-                <div className='flex px-[2vw] w-full h-full relative bg-black bg-opacity-50 min-h-[30vh] hover:bg-white hover:bg-opacity-30 flex-col justify-center items-center'>
+                <div className='flex px-[2vw] w-full h-full relative bg-black bg-opacity-50 min-h-[20vh] hover:bg-white hover:bg-opacity-30 flex-col justify-center items-center'>
                     <div className='absolute z-20 top-0 left-0 w-full h-full bg-black bg-opacity-80 hover:bg-opacity-60'></div>
                     <Image alt="" src="/kolo_rozanca.webp" fill objectFit='cover'></Image>
-                    <p className='z-20 text-center text-bold text-white font-header2 text-[4.5vh] pointer-events-none'>RYCERSTWO NIEPOKALANEJ</p>
+                    <p className='z-20 text-center text-bold text-white font-header2 text-2xl pointer-events-none'>RYCERSTWO NIEPOKALANEJ</p>
                 </div>
                 </Link>
 
                 <Link href="/wspolnoty/klub-dyskusyjny">
-                <div className='flex px-[2vw] w-full h-full relative bg-black bg-opacity-50 min-h-[30vh] hover:bg-white hover:bg-opacity-30 flex-col justify-center items-center'>
+                <div className='flex px-[2vw] w-full h-full relative bg-black bg-opacity-50 min-h-[20vh] hover:bg-white hover:bg-opacity-30 flex-col justify-center items-center'>
                     <div className='absolute z-20 top-0 left-0 w-full h-full bg-black bg-opacity-80 hover:bg-opacity-60'></div>
                     <Image alt="" src="/kmi12.jpeg" fill objectFit='cover'></Image>
-                    <p className='z-20 text-center text-bold text-white font-header2 text-[4.5vh] pointer-events-none'>KATOLICKI KLUB DYSKUSYJNY</p>
+                    <p className='z-20 text-center text-bold text-white font-header2 text-2xl pointer-events-none'>KATOLICKI KLUB DYSKUSYJNY</p>
                 </div>
                 </Link>
 

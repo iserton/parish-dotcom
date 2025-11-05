@@ -88,7 +88,7 @@ export default function RootLayout({ children }) {
           <Menu/>
           {/* Your layout structure */}
           {children}
-          <Contact/>
+          {/* <Contact/> */}
           <Footer/>
         </HeaderVisibilityProvider>
       </body>
