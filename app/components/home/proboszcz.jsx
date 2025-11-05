@@ -19,7 +19,7 @@ const Proboszcz = () => {
                     <p className='mt-2 text-base'>Posługę duszpasterską pełnił jako wikariusz w parafiach: św. Trójcy w Błoniu, św. Wojciecha w Warszawie oraz św. Aleksandra w Warszawie. Od 2020 r. jest wikariuszem, a od czerwca 2025 r. proboszczem Parafii św. Andrzeja Apostoła w Warszawie.</p>
                     <p className='mt-2 text-base'>Imieniny obchodzi 29 czerwca. Pracuje jako nauczyciel religii w Szkole Podstawowej nr 220 przy ul. Jana Pawła II 26A w Warszawie oraz w Zespole Szkół nr 7 przy ul. Chłodnej 36/46 w Warszawie.</p>
                 </div>
-                <div className='flex w-full md:w-1/2 h-[40vw] md:h-full md:absolute relative right-0 top-0 h-full my-4 md:my-0'>
+                <div className='flex w-full md:w-1/2 h-[40vw] md:h-full md:absolute relative right-0 top-0 my-4 md:my-0'>
                     <Image
                         src="/ksiadz_pawel2.jpeg"
                         alt="zdjecie proboszcza"
