@@ -4,8 +4,8 @@ const Hours = () => {
   return (
     <div className='flex flex-col w-full py-24 relative justify-center bg-black'>
         <Image src="/godziny.jpeg" alt="tlo dziecko" fill={true} objectFit='cover' className='hidden md:flex'/>
-        <div className="md:pl-[45%] md:pr-8 w-full h-full text-white py-6 flex flex-col justify-center items-center md:items-stretch z-10">
-            <div className='flex w-full flex-row justify-center items-center'>
+        <div className="md:pl-[50%] md:pr-8 w-full h-full text-white py-6 flex flex-col justify-center items-center md:items-stretch z-10">
+            <div className='flex w-full flex-row justify-center md:justify-start items-center'>
                 <div className={`relative w-[10%] h-10`}>
                     <Image alt="ikonka kosciol" src="/icon-1.png" fill={true} objectFit='contain '></Image>
                 </div>
