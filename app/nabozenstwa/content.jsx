@@ -16,12 +16,12 @@ const Content = () => {
                         <h4 className='font-bold text-[2.3vh]'>Dni powszednie</h4>
                         <p className='mt-[2vh] text-[1.8vh]'>6:30</p>
                         <p className='mt-[1vh] text-[1.8vh]'>8:00</p>
-                        <p className='mt-[1vh] text-[1.8vh]'>9:00</p>
+                        <p className='mt-[1vh] text-[1.8vh]'>9:00<span className='text-[#ff0000]'>*</span></p>
                         <p className='mt-[1vh] text-[1.8vh]'>18:00</p>
                     </div>
                     <div className='mx-[1vw] pr-[1vw]'>
                         <h4 className='font-bold text-[2.3vh]'>Niedziele i święta</h4>
-                        <p className='mt-[2vh] text-[1.8vh]'>7:00</p>
+                        <p className='mt-[2vh] text-[1.8vh]'>7:00<span className='text-[#ff0000]'>*</span></p>
                         <p className='mt-[1vh] text-[1.8vh]'>8:30</p>
                         <p className='mt-[1vh] text-[1.8vh]'>10:00</p>
                         <p className='mt-[1vh] text-[1.8vh]'>11:30 (Rodzinna)</p>
@@ -56,7 +56,7 @@ const Content = () => {
             </div>
             <div className='md:w-1/2 w-full  justify-center flex flex-col pl-[5vw]'>
                 <h2 className='text-[4.5vh] font-main font-bold'>Nabożeństwa</h2>
-                <div className='flex flex-col mt-[5vh]'>
+                <div className='flex flex-col mt-[2vh]'>
                     <p className='mt-[1vh] text-[1.8vh]'>Nabożeństwa Majowe - po Mszy Św. o godz. 18.00</p>
                     <p className='mt-[1vh] text-[1.8vh]'>Nabożeństwa Czerwcowe - po Mszy Św. o godz. 18.00</p>
                     <p className='mt-[1vh] text-[1.8vh]'>Nabożeństwa Październikowe - po Mszy Św. o godz. 18.00</p>

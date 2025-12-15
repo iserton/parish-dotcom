@@ -1,62 +1,36 @@
-// 'use client'
-import React from 'react'
-// import { useState, useEffect } from 'react'
 import Image from 'next/image'
-import { marked } from 'marked'
 import ReactMarkdown from 'react-markdown';
 
 const Content = async ({id}) => {
-    // const router = useRouter()
-    // const id = router.query.id
-    console.log(id)
-    // const [data, setData] = useState(null);
-    // const [data, setData] = useState(null)
 
     const CustomParagraph = ({ children }) => (
-        <p className="my-4">{children}</p>
+        <p className="text-base my-4">{children}</p>
+      );
+    
+    const CustomHeading1 = ({ children }) => (
+        <h1 className="text-xl font-header2 my-6">{children}</h1>
       );
 
-    const res = await fetch('https://parafia.bieda.it/api/ogloszenia/' + id +'?populate=*', { next: { revalidate: 0 } })
-    const data = res.ok && await res.json()
+    const res = await fetch('https://cms.parafiaandrzeja.pl/api/ogloszenias/' + id +'?populate=*', 
+        { next: { revalidate: 0 }, headers: { 'Authorization': `Bearer ${process.env.CMS_API_TOKEN}` } });
+    const data = res.ok && await res.json();
 
-    // useEffect(() => {
-    //     fetch('https://parafia.bieda.it/api/ogloszenia/' + id +'?populate=*')
-    //     .then(res => res.json())
-    //     .then(data => {setData(data)})
-    // },[])
-
-    let htmlContent = null
-    if (data != null){
-        htmlContent = marked.parse(data.data.attributes.tresc)
-    }
-
-    if (data == null){
         return (
-            <div>
-                Problem
-            </div>
-        )
-    }
-    else {
-        console.log(data);
-        return (
-            <div className='flex flex-col md:flex-row px-[5vw] md:px-[10vw] bg-white pt-[20vh] md:pt-[25vh] pb-[10vh]'>
+            
+            <div className='flex flex-col-reverse md:flex-row md:px-[5vw] bg-white md:pt-[20vh] pb-24'>
+                {data ? (
+                    <><div className='w-full md:w-1/2 px-[5vw] md:px-0 md:pr-[5vw]'>
+                    <h1 className='text-3xl font-header2 text-center my-4 md:mt-0'>{data.data.tytul}</h1>
+                    <ReactMarkdown components={{ p: CustomParagraph, h1: CustomHeading1 }}>{data.data.tresc}</ReactMarkdown>
+                </div>
+                <div className='flex w-full md:w-1/2 pl-[5vw] h-[300px] md:h-[50vh] relative'>
+                    <Image fill alt="tlo ogloszenia" objectFit="cover" src={'https://cms.parafiaandrzeja.pl' + data.data.zdjecie.url}/>
+                </div></>
+                ) : <>Problem</>}
                 
-                <div className='w-full md:w-1/2 md:pr-[5vw]'>
-                    <h1 className='text-[5.5vh] font-header2 text-center mb-[2vh]'>{data.data.attributes.tytul}</h1>
-                    <div className='flex md:hidden  w-full h-[30vh] mb-[2vh] relative'>
-                        <Image fill alt="tlo ogloszenia" objectFit="cover" src={'https://parafia.bieda.it' + data.data.attributes.tlo.data.attributes.url}/>
-                    </div>
-                    {/* <textarea className='w-full mt-[5vh]'>{data.data.attributes.tresc}</textarea> */}
-                    {/* <div className="markdown" dangerouslySetInnerHTML={{ __html: htmlContent }} /> */}
-                    <ReactMarkdown components={{ p: CustomParagraph }}>{data.data.attributes.tresc}</ReactMarkdown>
-                </div>
-                <div className='hidden md:flex w-1/2 pl-[5vw] min-h-[50vh] relative'>
-                    <Image fill alt="tlo ogloszenia" objectFit="cover" src={'https://parafia.bieda.it' + data.data.attributes.tlo.data.attributes.url}/>
-                </div>
+                
             </div>
         )
-    }
 }
 
 export default Content

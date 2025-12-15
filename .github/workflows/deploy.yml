@@ -29,6 +29,7 @@ jobs:
             --build-arg PLAYLIST_ID=${{ secrets.PLAYLIST_ID }} \
             --build-arg CHANNEL_ID=${{ secrets.CHANNEL_ID }} \
             --build-arg DRIVE_FOLDER_ID=${{ secrets.DRIVE_FOLDER_ID }} \
+            --build-arg CMS_API_TOKEN=${{ secrets.CMS_API_TOKEN }} \
             -f Dockerfile \
             -t parish-dotcom \
             .
@@ -44,6 +45,7 @@ jobs:
             -e PLAYLIST_ID=${{ secrets.PLAYLIST_ID }} \
             -e CHANNEL_ID=${{ secrets.CHANNEL_ID }} \
             -e DRIVE_FOLDER_ID=${{ secrets.DRIVE_FOLDER_ID }} \
+            -e CMS_API_TOKEN=${{ secrets.CMS_API_TOKEN }} \
             --restart always \
             --name parish-dotcom \
             -p 9001:3000 \
