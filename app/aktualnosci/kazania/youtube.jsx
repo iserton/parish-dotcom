@@ -56,14 +56,17 @@ async function getYouTubeVideos() {
           photo: item.snippet.thumbnails.maxres || item.snippet.thumbnails.standard || item.snippet.thumbnails.high || item.snippet.thumbnails.medium || item.snippet.thumbnails.default,
         };
       });
+      
 
-      videos = (await Promise.all(videoDataPromises)).sort((a, b) => {
-        return new Date(b.date) - new Date(a.date); // Newest first
-      });
+      // Append this page's videos to the full list
+      const pageVideos = await Promise.all(videoDataPromises);
+      videos = videos.concat(pageVideos);
 
       nextPageToken = playlistResponse.data.nextPageToken;
     } while (nextPageToken);
 
+    // Sort all videos once after collecting every page
+    videos.sort((a, b) => new Date(b.date) - new Date(a.date));
     return videos;
   } catch (error) {
     console.error('Error fetching YouTube videos:', error);
