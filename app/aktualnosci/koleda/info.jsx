@@ -19,9 +19,9 @@ const Info = async () => {
                     data && data.data.tresc != "" ? (
                         <div className='w-full md:w-3/4 px-[6vw] md:px-0'>
                           <h1 className='text-3xl font-header2 text-center my-4 md:mt-0'>{data.data.tytul}</h1>
-                          {data.data.updatedAt && (
+                          {data.data.publishedAt && (
                             <p className='text-sm text-gray-500 text-center mb-4'>
-                              Ostatnia aktualizacja: {new Date(data.data.updatedAt).toLocaleString('pl-PL', { timeZone: 'Europe/Warsaw' })}
+                              Ostatnia aktualizacja: {new Date(data.data.publishedAt).toLocaleString('pl-PL', { timeZone: 'Europe/Warsaw' })}
                             </p>
                           )}
                           <ReactMarkdown components={{ p: CustomParagraph, h1: CustomHeading1, a: CustomLink }}>{mdText}</ReactMarkdown>
