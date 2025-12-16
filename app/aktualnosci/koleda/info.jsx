@@ -17,7 +17,7 @@ const Info = async () => {
         <div  className={`w-full flex justify-center px-[2vw] md:px-[5vw]`}>
              {
                     data && data.data.tresc != "" ? (
-                        <div className='w-full md:w-3/4 px-[5vw] md:px-0'>
+                        <div className='w-full md:w-3/4 px-[6vw] md:px-0'>
                           <h1 className='text-3xl font-header2 text-center my-4 md:mt-0'>{data.data.tytul}</h1>
                           {data.data.updatedAt && (
                             <p className='text-sm text-gray-500 text-center mb-4'>
