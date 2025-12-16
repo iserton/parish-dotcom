@@ -8,7 +8,7 @@ const News = async () => {
 
     <div id="first" className='w-full flex flex-col py-24 bg-white'>
             <div className={` w-full flex grid-cols-1 md:grid-cols-3 items-center justify-center flex-wrap gap-10 px-[2vw] md:px-[5vw]`}>
-                {data.data.length > 0 ? (
+                {data && data.data.length > 0 ? (
                     <>
                         {data.data.map(news => (
                     <Ogloszenie
