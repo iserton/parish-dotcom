@@ -58,6 +58,8 @@ const Menu = () => {
                     <hr className='my-2 border-1'/> */}
                     <Link className='my-2 text-4' onClick={closeReset} href="/aktualnosci/kazania">Kazania Ojca Leszka</Link>
                     <hr className='my-2 border-1'/>
+                    <Link className='my-2 text-4' onClick={closeReset} href="/aktualnosci/koleda">Wizyta duszpasterska</Link>
+                    <hr className='my-2 border-1'/>
                 </div>
 
                 <div className={`flex flex-col w-[65%] text-white text-3xl justify-center md:ml-[10%] ${menuElement == 'parafia' ? '' : 'hidden'} font-header2`}>

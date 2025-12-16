@@ -10,7 +10,7 @@ const News = async () => {
     <div className='flex flex-col w-full py-24 items-center justify-center bg-white text-black'>
         <h2 className='text-3xl font-header2'>Aktualności</h2>
         
-            {data.data.length > 0  ? (
+            {data && data.data.length > 0  ? (
                 <>
                 <div className='flex flex-col md:flex-row w-full items-center justify-center flex-wrap mt-8'>
 
