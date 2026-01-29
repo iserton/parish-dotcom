@@ -15,7 +15,8 @@ jobs:
 
       - name: Copy fallback files
         run: |
-          rsync -av --delete update/ /var/www/fallback/
+          rm -rf /var/www/fallback/*
+          cp -r update/* /var/www/fallback/
 
       - name: Remove existing container and image
         run: |
@@ -52,5 +53,5 @@ jobs:
             -e CMS_API_TOKEN=${{ secrets.CMS_API_TOKEN }} \
             --restart always \
             --name parish-dotcom \
-            -p 127.0.0.1:9001:3000 \
+            -p 9001:3000 \
             parish-dotcom
