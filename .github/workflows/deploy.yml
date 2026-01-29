@@ -13,6 +13,10 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      - name: Copy fallback files
+        run: |
+          rsync -av --delete update/ /var/www/fallback/
+
       - name: Remove existing container and image
         run: |
           docker rm -f parish-dotcom || true
@@ -48,5 +52,5 @@ jobs:
             -e CMS_API_TOKEN=${{ secrets.CMS_API_TOKEN }} \
             --restart always \
             --name parish-dotcom \
-            -p 9001:3000 \
+            -p 127.0.0.1:9001:3000 \
             parish-dotcom
