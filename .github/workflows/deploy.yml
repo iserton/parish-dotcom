@@ -13,6 +13,11 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      - name: Copy fallback files
+        run: |
+          rm -rf /var/www/fallback/*
+          cp -r update/* /var/www/fallback/
+
       - name: Remove existing container and image
         run: |
           docker rm -f parish-dotcom || true

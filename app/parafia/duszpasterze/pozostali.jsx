@@ -37,15 +37,15 @@ const Pozostali = () => {
 
         <div className='w-full  flex flex-row mt-[5vh]'>
             <div className='hidden md:flex w-1/2 h-[50vh] relative'>
-                {/* <Image className='pr-[5vw]' alt="zdjecie wikariusza" src="/ksiadz_zbigniew.jpeg" fill objectFit='cover'/> */}
+                <Image className='pr-[5vw]' alt="zdjecie wikariusza" src="/ksiadz_michal.jpg" fill objectFit='cover'/>
             </div>
             <div className='flex flex-col w-full md:w-1/2 justify-center md:pl-[3vw]'>
                 <h2 className='text-[4.5vh] font-header2'>Ks. Michał Wojutyński</h2>
                 <div className='flex md:hidden w-full h-[40vh] relative my-[2vh]'>
-                    {/* <Image className='' alt="zdjecie wikariusza" src="/ksiadz_zbigniew.jpeg" fill objectFit='cover'/> */}
+                    <Image className='' alt="zdjecie wikariusza" src="/ksiadz_michal.jpg" fill objectFit='cover'/>
                 </div>
-                {/* <p className='pt-[2vh]'>Prywatnie interesuje się literaturą teologiczną, prawniczą, historyczną, filozoficzną. Lubi rozmawiać z ludźmi, jeździć na rowerze, odbywać wycieczki krajoznawcze. Jednak – jak mówi - wszystko powyższe jest tylko dodatkiem, gdyż od ponad 45 lat najpełniej realizuje się jako ksiądz w pracy duszpasterskiej.</p>
-                <Link href="/parafia/duszpasterze/badowski"><button className='bg-dark text-white px-4 py-3 mt-[2vh]'>Zobacz więcej</button></Link> */}
+                <p className='pt-[2vh]'>Urodził się w 1985 r. Jest drugim z 5 rodzeństwa. Pochodzi z Parafii Chrystusa Króla na Gołębiowie w Radomiu. Ukończył Archidiecezjalne Seminarium Misyjne „Redemptoris Mater” w Warszawie.  W naszej wspólnocie parafialnej od 26 sierpnia 2025 r.</p>
+                <Link href="/parafia/duszpasterze/wojutynski"><button className='bg-dark text-white px-4 py-3 mt-[2vh]'>Zobacz więcej</button></Link>
             </div>
         </div>
 
