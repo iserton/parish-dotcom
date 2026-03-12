@@ -60,6 +60,8 @@ import Menu from './components/navigation/menu';
 import Footer from './components/footer'
 import Contact from './components/home/contact'
 import { HeaderVisibilityProvider } from './HeaderVisibilityContext.js';
+import { Analytics } from '@vercel/analytics/next';
+
 import '@fortawesome/fontawesome-free/css/all.min.css';
 const inter = Inter({ subsets: ['latin'] });
 
@@ -91,6 +93,7 @@ export default function RootLayout({ children }) {
           {/* <Contact/> */}
           <Footer/>
         </HeaderVisibilityProvider>
+        <Analytics />
       </body>
     </html>
   );
