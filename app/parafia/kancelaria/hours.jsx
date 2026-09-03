@@ -19,8 +19,7 @@ const Hours = () => {
       <div className="w-full md:w-1/2 h-full flex flex-col justify-center">
         <h2 className="text-[5.5vh] font-header2">Godziny Otwarcia</h2>
         <p className="mt-[3vh] text-black text-[1.7vh]">
-          Czynna w poniedziałek, środę i piątek w godzinach 16:00 - 17:30 (w
-          środę nieczynna)
+          Czynna w poniedziałek, środę i piątek w godzinach 16:00 - 17:30
         </p>
         <p className="mt-[1vh] text-black text-[1.7vh]">
           W okresie wakacyjnym (lipiec-sierpień) Kancelaria jest czynna: we
