@@ -44,7 +44,7 @@ const Pozostali = () => {
                 <div className='flex md:hidden w-full h-[40vh] relative my-[2vh]'>
                     <Image className='' alt="zdjecie wikariusza" src="/ksiadz_grzegorz.jpg" fill objectFit='cover'/>
                 </div>
-                <p className='pt-[2vh]'>Urodził się w 1985 r. Jest drugim z 5 rodzeństwa. Pochodzi z Parafii Chrystusa Króla na Gołębiowie w Radomiu. Ukończył Archidiecezjalne Seminarium Misyjne „Redemptoris Mater” w Warszawie.  W naszej wspólnocie parafialnej od 26 sierpnia 2025 r.</p>
+                <p className='pt-[2vh]'>Urodzony w 1977 roku w Kielcach. Przed seminarium ukończył studia budowlane na Politechnice Świętokrzyskiej, po czym pracował cztery i pół roku w firmie produkującej pokrycia dachowe.</p>
                 <Link href="/parafia/duszpasterze/wojutynski"><button className='bg-dark text-white px-4 py-3 mt-[2vh]'>Zobacz więcej</button></Link>
             </div>
         </div>
