@@ -45,7 +45,7 @@ const Pozostali = () => {
                     <Image className='' alt="zdjecie wikariusza" src="/ksiadz_grzegorz.jpg" fill objectFit='cover'/>
                 </div>
                 <p className='pt-[2vh]'>Urodzony w 1977 roku w Kielcach. Przed seminarium ukończył studia budowlane na Politechnice Świętokrzyskiej, po czym pracował cztery i pół roku w firmie produkującej pokrycia dachowe.</p>
-                <Link href="/parafia/duszpasterze/wojutynski"><button className='bg-dark text-white px-4 py-3 mt-[2vh]'>Zobacz więcej</button></Link>
+                <Link href="/parafia/duszpasterze/lapinski"><button className='bg-dark text-white px-4 py-3 mt-[2vh]'>Zobacz więcej</button></Link>
             </div>
         </div>
 
